@@ -1,11 +1,15 @@
 @tag
 Feature: Title of your feature
   I want to use this template for my feature file
+#
+  #Scenario:1 Dropdowns
+    #Given I want to write a step with precondition
+    #When some other precondition
 
-  Scenario:1 Title of your scenario
-    Given I want to write a step with precondition
-    When some other precondition
 
+	Scenario:2 Alerts
+    Given Login for alerts
+    When Check various alerts
   #Scenario Outline: Title of your scenario outline
     #Given I want to write a step with <name>
     #When I check for the <value> in step

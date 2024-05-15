@@ -13,7 +13,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 
-public class Gluecode1 {
+public class Gluecode_Dropdown {
 	
 	WebDriver driver;
 	

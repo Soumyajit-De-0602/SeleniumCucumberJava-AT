@@ -3,7 +3,7 @@
   <groupId>Soumyajit</groupId>
   <artifactId>SeleniumJava</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
+   
   <dependencies>
 
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
@@ -56,6 +56,12 @@
 		    <groupId>commons-io</groupId>
 		    <artifactId>commons-io</artifactId>
 		    <version>2.15.1</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.oracle.database.jdbc</groupId>
+		    <artifactId>ojdbc8</artifactId>
+		    <version>19.8.0.0</version>
 		</dependency>
 
 

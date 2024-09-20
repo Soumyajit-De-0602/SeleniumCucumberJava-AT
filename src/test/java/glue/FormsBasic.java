@@ -30,7 +30,9 @@ public class FormsBasic {
         for(int i=0;i<2;i++)
         {
         	driver.findElement(By.id("sex-"+i)).click();
-        	TimeUnit.SECONDS.sleep(10);
+        	String g= driver.findElement(By.id("sex-"+i)).getAttribute("value").toString().trim();
+        	System.out.println("Value is: "+g);
+//        	TimeUnit.SECONDS.sleep(10);
         }
         // Select Experience
         for(int i=0;i<7;i++)
@@ -49,7 +51,8 @@ public class FormsBasic {
         // Select Continent
 //        driver.findElement(By.id("continents")).click();
 //        WebElement dropdown = driver.findElement(By.id("continents"));
-//        dropdown.findElement(By.xpath("//option[. = 'Europe']")).click();
+
+        //dropdown.findElement(By.xpath("//option[. = 'Europe']")).click();
         new Select(driver.findElement(By.id("continents"))).selectByValue("Europe");
 
         // Select Command

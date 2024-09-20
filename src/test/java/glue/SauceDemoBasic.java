@@ -22,8 +22,9 @@ public class SauceDemoBasic {
         // Launching website 
         driver.get("https://www.saucedemo.com/"); 
         WebElement a = driver.findElement(By.id("user-name"));
+      
         a.sendKeys("standard_user");
-        
+                
         WebElement b = driver.findElement(By.id("password"));
         b.sendKeys("secret_sauce");
         

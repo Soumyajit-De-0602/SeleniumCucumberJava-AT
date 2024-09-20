@@ -2,3 +2,5 @@
 *.class
 /target/classes
 /target
+/target/classes
+/target/test-classes

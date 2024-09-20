@@ -63,4 +63,32 @@ public class Gluecode_Screenshot {
 //		//Copy file at destination
 		FileUtils.copyFile(SrcFile, DestFile);
 		}
+	 
+	 public static void takeSnapShot(WebDriver webdriver,String Filename, String Path) throws Exception{
+		 
+		 
+			//Convert web driver object to TakeScreenshot
+			TakesScreenshot scrShot =((TakesScreenshot)webdriver);
+			//Call getScreenshotAs method to create image file
+			File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
+			//Move image file to new destination
+			File DestFile=new File(Path+java.time.LocalDate.now()+"\\"+Filename+".jpeg");
+//			//Copy file at destination
+			FileUtils.copyFile(SrcFile, DestFile);
+			}
+	 
+	 public static void takeSnapShot(WebDriver webdriver,String Filename, String Path, String imgType) throws Exception{
+		 
+		 
+			//Convert web driver object to TakeScreenshot
+			TakesScreenshot scrShot =((TakesScreenshot)webdriver);
+			//Call getScreenshotAs method to create image file
+			File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
+			//Move image file to new destination
+			File DestFile=new File(Path+java.time.LocalDate.now()+"\\"+Filename+"."+imgType);
+//			//Copy file at destination
+			FileUtils.copyFile(SrcFile, DestFile);
+			}
+	 
+	 
 }

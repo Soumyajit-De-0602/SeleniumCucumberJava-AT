@@ -7,14 +7,14 @@ Feature: Title of your feature
     When some other precondition
 
 
-	Scenario:2 Alerts
-    Given Login for alerts
-    When Check various alerts
+#	Scenario:2 Alerts
+    #Given Login for alerts
+    #When Check various alerts
     
    #Scenario:3 Tables
     #Given Login for tables
     #When Check various tables
-    #
+    
    #Scenario:4 Screenshot
     #Given Login for screenshot
     #When Take screenshot

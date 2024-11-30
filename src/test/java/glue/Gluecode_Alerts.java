@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.ArrayList;
 import java.util.List;
 import io.cucumber.junit.CucumberOptions;
+import util.variables;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -16,23 +17,25 @@ import io.cucumber.java.en.When;
 
 public class Gluecode_Alerts {
 	
-	WebDriver driver;
+//	WebDriver driver;
+	CommonMethods commonMethods = new CommonMethods();
+//	public static variables variables = new variables();
 	
 	 @Given("^Login for alerts$")
 	 public void user_already_on_alert_page(){
-		 
-		 System.setProperty( 
-		            "webdriver.chrome.driver", 
-		            "F:\\MyWorkspaces\\Selenium_Own\\SeleniumJava\\lib\\chromedriver.exe"); 
-		  
-		         driver = new ChromeDriver(); 
-		  
-		        // Maximize the browser 
-		        // using maximize() method 
-		        driver.manage().window().maximize(); 
+		 commonMethods.checkbrowser();
+//		 System.setProperty( 
+//		            "webdriver.chrome.driver", 
+//		            "F:\\MyWorkspaces\\Selenium_Own\\SeleniumJava\\lib\\chromedriver.exe"); 
+//		  
+//		         driver = new ChromeDriver(); 
+//		  
+//		        // Maximize the browser 
+//		        // using maximize() method 
+//		        driver.manage().window().maximize(); 
 		  
 		        // Launching website 
-		        driver.get("https://letcode.in/alert");
+		 variables.driver.get("https://letcode.in/alert");
 		 
 	 }
 	 
@@ -41,17 +44,17 @@ public class Gluecode_Alerts {
 	 @When("^Check various alerts$")
 	 public void checkalerts() throws InterruptedException{
 		 
-		 driver.findElement(By.id("confirm")).click();
+		 variables.driver.findElement(By.id("confirm")).click();
 		 Thread.sleep(2000);
 		 
-		 driver.switchTo().alert().accept();
+		 variables.driver.switchTo().alert().accept();
 		 Thread.sleep(2000);
 
-		 driver.findElement(By.id("prompt")).click();
+		 variables.driver.findElement(By.id("prompt")).click();
 		 Thread.sleep(2000);
 		 
-		 driver.switchTo().alert().sendKeys("Soumya");
-		 driver.switchTo().alert().accept();
+		 variables.driver.switchTo().alert().sendKeys("Soumya");
+		 variables.driver.switchTo().alert().accept();
 		 
 	 }
 }

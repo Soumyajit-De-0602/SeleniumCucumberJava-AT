@@ -2,9 +2,9 @@
 Feature: Title of your feature
   I want to use this template for my feature file
 
-  Scenario:1 Dropdowns
-    Given I want to write a step with precondition
-    When some other precondition
+  #Scenario:1 Dropdowns
+    #Given I want to write a step with precondition
+    #When some other precondition
 
 
 #	Scenario:2 Alerts
@@ -18,6 +18,18 @@ Feature: Title of your feature
    #Scenario:4 Screenshot
     #Given Login for screenshot
     #When Take screenshot
+    
+    #Scenario:5 Dropdowns using login Parametres
+    #Given Open URL for "DropdownURL"
+    #When some other precondition
+    
+    Scenario:6 Alerts using login Parametres
+    Given Open URL for "AlertURL"
+    When Check various alerts
+    
+    Scenario: Close Browser and DB Connection
+    And Close Browser and DB Connection
+    
     
   #Scenario Outline: Title of your scenario outline
     #Given I want to write a step with <name>

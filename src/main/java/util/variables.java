@@ -5,6 +5,7 @@ import java.io.*;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.Statement;
 
 import org.openqa.selenium.WebDriver;
 
@@ -32,6 +33,7 @@ public class variables {
 	public static Connection connection = null;
 	public static PreparedStatement preparedStatement = null;
 	public static ResultSet resultSet = null;
+	public static Statement statement = null;
 	public static String jdbcUrl = null;
 	public static String oracleUsername = null;
 	public static String oraclePassword = null;

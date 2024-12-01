@@ -27,6 +27,10 @@ Feature: Title of your feature
     Given Open URL for "AlertURL"
     When Check various alerts
     
+    Scenario: Execute a SQL Statement
+    Given View Order details through SQL Statement
+    And View Product details through SQL Statement
+    
     Scenario: Close Browser and DB Connection
     And Close Browser and DB Connection
     

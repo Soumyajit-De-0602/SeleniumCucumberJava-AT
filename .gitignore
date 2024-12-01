@@ -8,3 +8,4 @@
 /target
 /target/classes/META-INF
 /target/test-classes/glue
+/target/*
